@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قائمة المهام</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app">
+    <header class="app__header">
+      <div>
+        <h1>قائمة المهام</h1>
+        <p class="app__subtitle">نظّم يومك خطوة بخطوة</p>
+      </div>
+      <span class="counter">✅ <span id="taskCount">0</span></span>
+    </header>
+
+    <div class="add-row">
+      <input type="text" id="taskInput" placeholder="اكتب مهمة جديدة...">
+      <button id="addBtn">إضافة</button>
+    </div>
+
+    <p id="message" class="message"></p>
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <p id="emptyState" class="empty-state">مفيش مهام لسه، ابدأ بإضافة أول مهمة 👆</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
